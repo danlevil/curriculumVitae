@@ -1,12 +1,11 @@
 :root{
-    --Punto_focal:#d80808 /*Rojo*/
-    --interfaz:   #ede2e2 /*Blanco*/
+    --punto-focal:  #b80644f /*Rojo*/
+    --interfaz:     #ede2e2 /*Blanco*/
     --letrasOpacas: #b2babb
 }
 /*El menu de navegación del sitio*/
 .navbar{
-    background-color: var(--interfaz);
-    
+    background-color: var(--punto-focal);
     margin-bottom: 30px;
 }
 .navbar:hover{
@@ -43,10 +42,9 @@
 }
 /*Resumen*/
 .introPersonal{
-    
     background-color: #b80644;
     margin-top: 50px;
-    padding-bottom: 14rem;
+    padding-bottom: 3.6rem;
     padding-top: 3.6rem;
 }
 .containerPersonal{

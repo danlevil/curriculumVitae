@@ -1,0 +1,43 @@
+:root{
+    --Punto_focal:#b80644 /*Rojo*/
+    --interfaz:   #ede2e2 /*Blanco*/
+}
+.sectionbackground{
+    position: static;
+    background-color:#b80644;
+    max-height: 15rem;/*Controla cuanto va a crecer el section*/
+    padding-bottom: 4rem; 
+    margin-bottom: 25rem;
+}
+.containerBackground{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-left: 15em;
+    margin-right: 15em;
+    top: 50px;
+    box-shadow: gray 1px 1px 2px;
+
+}
+/*
+.backgroundExtensivo{
+    position: inherit;
+    background-color: greenyellow;
+    display: flex;
+    flex-wrap: ;
+    justify-content: space-around;
+    border-radius: 8px;
+    top: 20px;
+    border-style:ridge;
+}*/
+.educacion{
+    text-align: center;
+    flex-basis: 50%;
+}
+.areasDeInteres{
+    text-align: center;
+    flex-basis: 50%;
+
+}
