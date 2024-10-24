@@ -3,6 +3,10 @@
     --interfaz:     #ede2e2 /*Blanco*/
     --letrasOpacas: #b2babb
 }
+*{
+    box-sizing: border-box;
+
+}
 /*El menu de navegación del sitio*/
 .navbar{
     background-color: var(--punto-focal);
