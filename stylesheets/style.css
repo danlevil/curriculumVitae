@@ -1,55 +1,146 @@
 :root{
-    --punto-focal:  #b80644f /*Rojo*/
+    --punto-focal:  #b80644 /*Rojo*/
     --interfaz:     #ede2e2 /*Blanco*/
     --letrasOpacas: #b2babb
 }
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
+}
+body{
+    font-family: "Fira-sans", sans-serif;
+    font-size: 20px;
 }
 /*El menu de navegación del sitio*/
-.navbar{
-    background-color: var(--punto-focal);
-    margin-bottom: 30px;
+.navbar {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    height: 10px;
 }
-.navbar:hover{
+/* Hide the checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Menu for larger screens */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+.navbar a, .navbar li>a{
+    background-color: white;
+    color: rgb(178, 186, 187, 0.8);
+    font-size: 18px;
+    padding: 20px;
+    margin: 30px 10px 40px 10px ;
+    text-decoration: none;
     
 }
-.navbar a{
-    color: rgb(178, 186, 187);
-    margin: 15px 30px;
-    
-}
-.navbar a:hover{
+
+.navbar a:hover , .navbar li>a:hover{
     color: black;
     font-weight: bold;
-    transition: 0.4s;
-    font-size: 20px;
-    margin-bottom: 2px;
+    transition: 0.4s ease-in-out 0.2s;
+    font-size: 24px;
+    margin-bottom: 1px;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background-color: rgb(252, 253, 253);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+        
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    /* Show menu icon on mobile */
+    .menu-icon {
+        display: block;
+    }
+    
+
+    /* Toggle menu when checkbox is checked */
+    input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+        
+    }
+    
+}
+
+
 /*Header*/
 .header_container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: white;
+    margin-bottom: 2rem;
+
 
 }
+
 .header_container h1 {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 29px;
+    font-size: 40px;
 }
 .header_container h6 {
     margin-top: 15px;
     margin-bottom: 25px;
+    font-size: 18px;
 }
 /*Resumen*/
 .introPersonal{
     background-color: #b80644;
     margin-top: 50px;
-    padding-bottom: 3.6rem;
-    padding-top: 3.6rem;
+    padding-bottom: 2.6rem;
+    padding-top: 2.6rem;
+}
+.introPersonal h1{
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+.introPersonal h6{
+    padding: 20px;
+    font-size: 20px;
 }
 .containerPersonal{
     display: block;

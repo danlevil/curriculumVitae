@@ -4,51 +4,77 @@
 }
 *{
     box-sizing: border-box;
-
 }
 .sectionbackground{
-    position: static;
+    display: flex;
+    justify-content: center;
     background-color:#b80644;
     max-height: 15rem;/*Controla cuanto va a crecer el section*/
     padding-bottom: 4rem; 
-    margin-bottom: 25rem;
+    margin-bottom: 18rem;
+    border: dashed violet;
 }
+
 .containerBackground{
-    position: relative;
+    border: dashed yellow;
     display: flex;
     flex-wrap: wrap;
-    background-color: whitesmoke;
+    min-width: 500px;
+    background-color: rgb(190, 185, 185,0.6);
     border-radius: 8px;
     margin-left: 15em;
     margin-right: 15em;
-    top: 50px;
     box-shadow: gray 1px 1px 2px;
 
 }
-/*
-.backgroundExtensivo{
-    position: inherit;
-    background-color: greenyellow;
-    display: flex;
-    flex-wrap: ;
-    justify-content: space-around;
-    border-radius: 8px;
-    top: 20px;
-    border-style:ridge;
-}*/
-.educacion{
+.sb{
+    padding:  20px;
+    background-color:  white;
+    border: dashed red;
+    flex-basis: 50%;
     text-align: center;
     flex-basis: 50%;
 }
-.areasDeInteres{
-    text-align: center;
-    flex-basis: 50%;
+.sb>p , .sb>h2{
+    padding: 10px;
+    
+}
+.sb>ul{
+    list-style: none;
+}
+.sbsubtitulo{
+    color: #b80644;
+    font-size: 20px;
+    font:bolder;
+}
+@media screen and (max-width: 768px){
+    .sectionbackground{
+        min-width: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 40rem;
 
+    }
+    .containerBackground{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
 }
+
+
 /*Seccion de proyectos personales*/
 .proyectosPersonales{
     margin-top: 10px;
     padding: 20px;
+    margin-bottom: 4rem;
+}
+.proyectosPersonales h2{
+    font-size: 30px;
+}
+.proyectosPersonales h4{
+    font-size: 22px;
 }
 .proyectosPersonales h2, .proyectosPersonales h4{
     text-align: center;
@@ -57,7 +83,7 @@
 #containerP{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 5rem;
 }
 .containertarjeta{
     display: flex;
@@ -69,7 +95,7 @@
     flex-grow: 2;
 }
 .tarjeta{
-    background-color: white ;
+    background-color:rgba(227, 227, 227, 0.2) ;
     border-radius: 20px;
     border: 0.7px gray solid;
     box-shadow: gray 0.6px 0.8px 0.5px;
@@ -78,13 +104,22 @@
     justify-content: center;
     align-items: center;
     width: 350px;
-    max-width: 350px;
     height: 200px;
 }
+h5{
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+}
 .tarjeta:hover{
-    background-color: rgb(0, 0, 0, 0.8999);
+    background-color: rgba(7, 7, 7, 0.9);
     color: white;
-    transition: all 1.5s ease-in-out 0.2s;
+    width: 380px;
+    height: 280px;
+    transition: all 0.8s ease-in-out 0.3s;
+    h5{
+        top: 1px;
+    }
     .tarjeta-text{
         display: inline;
         visibility: visible;
@@ -97,6 +132,7 @@
         visibility: visible;
         background-color: #b80644;
         color: white !important;
+        margin-top: 25px;
         padding: 0.75rem;
         border-radius: 10px;
         width: auto;
@@ -105,27 +141,21 @@
         opacity: 0.8;
     }
 }
-
 .tarjeta-text{
     visibility: hidden;
     
 }
-
 .botonTarjetas{
     visibility: hidden;
 }
-
-/*
-.espacio{
-    background-color: aqua;
-    height: 80px;
-    width: 200px;
-    z-index: 0.1;
-
+@media screen and (max-width: 768px){
+    .containerP{
+        flex-direction: column;
+        
+    }
+    .containertarjeta{
+        width: 300px;
+        margin-bottom: 20px;
+    }
 }
-.espacio:hover{
-    height: 0px;
-
-}*/
-
 
