@@ -12,28 +12,29 @@
     max-height: 15rem;/*Controla cuanto va a crecer el section*/
     padding-bottom: 4rem; 
     margin-bottom: 18rem;
-    border: dashed violet;
 }
 
 .containerBackground{
-    border: dashed yellow;
     display: flex;
     flex-wrap: wrap;
     min-width: 500px;
-    background-color: rgb(190, 185, 185,0.6);
-    border-radius: 8px;
     margin-left: 15em;
     margin-right: 15em;
     box-shadow: gray 1px 1px 2px;
+    border-radius: 8px;
+
+    
 
 }
 .sb{
+    border-radius: 8px;
     padding:  20px;
     background-color:  white;
-    border: dashed red;
     flex-basis: 50%;
     text-align: center;
     flex-basis: 50%;
+    box-shadow: gray 1px 1px 2px;
+    
 }
 .sb>p , .sb>h2{
     padding: 10px;
@@ -66,8 +67,8 @@
 
 /*Seccion de proyectos personales*/
 .proyectosPersonales{
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 2rem;
+    padding: 50px;
     margin-bottom: 4rem;
 }
 .proyectosPersonales h2{
@@ -83,7 +84,7 @@
 #containerP{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .containertarjeta{
     display: flex;
@@ -97,7 +98,6 @@
 .tarjeta{
     background-color:rgba(227, 227, 227, 0.2) ;
     border-radius: 20px;
-    border: 0.7px gray solid;
     box-shadow: gray 0.6px 0.8px 0.5px;
     display: flex;
     flex-direction: column;

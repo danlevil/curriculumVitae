@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Menú desplegable*/
+.navbarform{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    height: 80px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+.navbarform a, .navbarform li>a {
+    background-color: white;
+    color: rgb(178, 186, 187, 0.8);
+    font-size: 18px;
+    padding: 20px;
+    margin: 30px 10px 40px 10px ;
+    text-decoration: none;
+    
+}
+
+.navbarform a:hover , .navbarform li>a:hover{
+    color: black;
+    font-weight: bold;
+    transition: 0.4s ease-in-out 0.2s;
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+/*Responsive: Menu desplegable*/
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background-color: #b80644;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+        
+    }
+    .navbarform a, .navbarform li>a {
+        background-color: #b80644;
+        color: white;
+    }
+    .fotoform{
+        visibility: hidden;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    button{
+        padding: 5px 10px;
+        margin-left: 22px;
+    }
+    
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+        
+    }
+    
+}
+.fotoform {
+    display: flex;
+    justify-content: center;
+}
+.fotoform img {
+    position: absolute;
+    top:45px;
+}
+/*Contenedor del formulario,videos y mapa*/
+.contenedorContacto{
+    margin: 6rem 60px 1px;
+    display: grid;
+    grid-template-rows: repeat(4,7em);
+    grid-template-columns: 220px  180px;
+    grid-template-areas: 
+        "formulario formulario formulario mapa mapa"
+        "formulario formulario formulario mapa mapa"
+        "formulario formulario formulario video video"
+        "formulario formulario formulario video video"
+        
+    ;
+    gap:0.5rem 0.5rem;
+    box-shadow: gray 1px 1px 2px;
+    
+}
+.ubicacion{
+    grid-area: mapa;
+    color: rgb(195, 195, 195,0.8);
+    
+}
+.ubicacion>section{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.videoyoutube{
+    grid-area: video;
+    color: rgb(195, 195, 195,0.8);
+}
+.videoyoutube>section{
+    padding: 10px;
+    text-align: center;
+}
+h4{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: lighter;
+}
+/*Contenedor del formulario*/
+.form{
+    grid-area: formulario;
+    
+}
+.formulario{
+    display: grid;
+    grid-template-rows: repeat(2,7em)200px;
+    grid-template-areas: 
+        "nombre email"
+        "proyecto reunion"
+        "descripcion descripcion"
+    
+    ;
+    gap: 0.5rem 0.5rem;
+    align-content: end;
+}
+
+.area-1{
+    grid-area: nombre;    
+}
+.area-2{
+    grid-area: email;
+}
+.area-3{
+    grid-area: proyecto;
+}
+.area-4{
+    grid-area: reunion;
+}
+.area-5{
+    grid-area: descripcion;
+}
+.areaform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 40px;
+    color: rgb(195, 195, 195,0.8);
+}
+.areaform input{
+    font-size: 30px;
+    border-radius:30px ;
+    color: rgb(195, 195, 195,0.8);
+}
+.areaform textarea{
+    font-size: 30px;
+    border-radius:30px ;
+    color: rgb(195, 195, 195,0.8);
+}
+.areaform select{
+    font-size: 30px;
+    border-radius:30px ;
+    color: rgb(195, 195, 195,0.8);
+}
+.areaform label{
+    font-size: 30px;
+    text-align: start;
+    color: rgb(195, 195, 195,0.8);
+}
+/*Responsive:formulario, mapa y video*/
+@media screen and (max-width: 768px){
+    .contenedorContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorenviar{
+        margin: 4rem;
+    }
+}
+.contenedorenviar{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 30px 1px;
+}
+.enviarform{
+    font-size: 28px ;
+    color: #b80644;
+    background-color: white;
+    border-radius: 50px;
+    padding: 1px 15px;
+    border-color: #b80644;
+}
+.enviarform:hover{
+    color: white;
+    background-color: #b80644;
+    font-size: 35px;
+    transition: all 0.8s ease 0.5s;
+}
