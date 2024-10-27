@@ -145,6 +145,7 @@ h4{
     font-family:'Times New Roman', Times, serif ;
     font-weight: lighter;
 }
+
 /*Contenedor del formulario*/
 .form{
     grid-area: formulario;
@@ -207,13 +208,16 @@ h4{
     color: rgb(195, 195, 195,0.8);
 }
 /*Responsive:formulario, mapa y video*/
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 1300px){
     body{
         width:100%;
     }
     .contenedorContacto{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20%;
     }
     .formulario{
         display: flex;
@@ -232,28 +236,31 @@ h4{
         width:  100%;
     }
     .contenedorenviar{
-        margin: 4rem;
+        margin-top: 2em;
     }
-    .contenedorenviar{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-bottom: 3em;
+
+    .enviarform{
+        margin: 2em;
+        width: 30%;
     }
 }
 .contenedorenviar{
+    grid-column: 3/4;
     display: flex;
     justify-content: center;
-    margin: 2rem 30px 1px;
 }
 .enviarform{
+    position: absolute;
     font-size: 28px ;
     color: #b80644;
     background-color: white;
     border-radius: 50px;
-    padding: 1px 15px;
+    padding: 5px 15px;
     border-color: #b80644;
+    margin: 1em;
+
+    
+
 }
 .enviarform:hover{
     color: white;

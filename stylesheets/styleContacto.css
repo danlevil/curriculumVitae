@@ -84,6 +84,11 @@
     .info_y_contacto{
         width: 100%;
     }
+    .contenedorInfo{
+        width: 100%;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
     .piepagina{
         justify-content: center;
         width: 100%;
@@ -92,6 +97,6 @@
         text-align: center;
     }
     .svgcontacto{
-        width: 50px;
+        width: 40px;
     }
 }
