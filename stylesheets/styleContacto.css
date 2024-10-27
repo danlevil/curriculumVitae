@@ -77,3 +77,21 @@
     
 
 }
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    .info_y_contacto{
+        width: 100%;
+    }
+    .piepagina{
+        justify-content: center;
+        width: 100%;
+    }
+    .piepagina h3{
+        text-align: center;
+    }
+    .svgcontacto{
+        width: 50px;
+    }
+}

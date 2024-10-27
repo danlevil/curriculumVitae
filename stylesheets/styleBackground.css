@@ -5,6 +5,7 @@
 *{
     box-sizing: border-box;
 }
+/*Informacion personal, áreas de interés*/
 .sectionbackground{
     display: flex;
     justify-content: center;
@@ -49,6 +50,9 @@
     font:bolder;
 }
 @media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
     .sectionbackground{
         min-width: auto;
         display:flex;
@@ -61,6 +65,17 @@
     .containerBackground{
         flex-direction: column;
         margin-bottom: 5rem;
+        justify-content: center;
+    }
+    .sb{
+        justify-content: center;
+
+    }
+    .sb>h2 , .sb>p{
+        display: block;
+        width: 100%;
+        padding: 0.5em 2em;
+        text-align: center;
     }
 }
 
@@ -149,6 +164,9 @@ h5{
     visibility: hidden;
 }
 @media screen and (max-width: 768px){
+    .proyectosPersonales{
+        width: 100%;
+    }
     .containerP{
         flex-direction: column;
         

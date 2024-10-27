@@ -151,3 +151,10 @@ input[type="checkbox"] {
 .centrado h1, .centrado h6{
     color:whitesmoke;
 }
+@media screen and (max-width:768px) {
+    body{
+        width:100% ;
+    }
+
+    
+}

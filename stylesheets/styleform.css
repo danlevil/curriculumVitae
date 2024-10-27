@@ -208,6 +208,9 @@ h4{
 }
 /*Responsive:formulario, mapa y video*/
 @media screen and (max-width: 768px){
+    body{
+        width:100%;
+    }
     .contenedorContacto{
         display: flex;
         flex-direction: column;
@@ -216,8 +219,27 @@ h4{
         display: flex;
         flex-direction: column;
     }
+    .form{
+        width: 100%;
+        padding-right: 3em;
+    }
+    .areaform{
+        max-width: 100%;
+
+    }
+    .areaform input ,textarea,select , .ubicacion section iframe
+    , .videoyoutube section iframe{
+        width:  100%;
+    }
     .contenedorenviar{
         margin: 4rem;
+    }
+    .contenedorenviar{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3em;
     }
 }
 .contenedorenviar{
